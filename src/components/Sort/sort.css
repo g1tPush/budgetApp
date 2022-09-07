@@ -1,0 +1,11 @@
+@media only screen and (max-width: 750px) {
+    .DateInput {
+        width: 100px !important;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .DateRangePicker_picker__directionLeft {
+        left: -19px !important;
+    }
+}

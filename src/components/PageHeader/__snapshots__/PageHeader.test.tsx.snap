@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders create sign 1`] = `
+<p
+  className="sc-gsnTZi gAzqOS"
+>
+  Create Expense
+</p>
+`;
+
+exports[`renders dashboard 1`] = `
+Array [
+  <p
+    className="sc-gsnTZi gAzqOS"
+  >
+    Viewing 
+    <b>
+      1
+    </b>
+     expense totalling 
+    <b>
+      $
+      1000
+    </b>
+  </p>,
+  <a
+    data-testid="addExpense"
+    href="/create"
+    onClick={[Function]}
+  >
+    <button
+      className="sc-bczRLJ dhHktu"
+      mode={0}
+      style={
+        Object {
+          "marginTop": "20px",
+        }
+      }
+    >
+      Add Expense
+    </button>
+  </a>,
+]
+`;
+
+exports[`renders edit sign 1`] = `
+<p
+  className="sc-gsnTZi gAzqOS"
+>
+  Edit Expense
+</p>
+`;

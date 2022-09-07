@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Header from './components/Header/Header'
+import { GlobalStyle } from './shared/global'
+import { Routes, Route } from 'react-router-dom'
+import ExpenseFormComp from './components/ExpenseFormComp/ExpenseFormComp'
+import MainPage from './components/MainPage'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <GlobalStyle />
+      <Header />
+      <Routes>
+        <Route path='/' element={
+          <MainPage />
+        } />
+        <Route path='/create' element={
+          <ExpenseFormComp screenType='create' />
+        } />
+        <Route path='/edit/:id' element={
+          <ExpenseFormComp screenType='edit' />
+        } />
+      </Routes>
+    </>
+  )
 }
 
-export default App;
+export default App

@@ -1,19 +1,30 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React, { createContext, useContext } from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App'
+import { ExpensesStore } from './store/domainStore'
+import { BrowserRouter } from 'react-router-dom'
+
+export const StoreContext = createContext<ExpensesStore>({} as ExpensesStore);
+export const StoreProvider = StoreContext.Provider
+
+export const expenseList = new ExpensesStore()
+
+export const useStore = (): typeof expenseList => useContext(StoreContext)
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+  (document.getElementById('root') || document.createElement('div')) as HTMLElement
+)
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const FullApp = () => {
+  return (
+    <React.StrictMode>
+      <BrowserRouter>
+        <StoreProvider value={expenseList}>
+          <App />
+        </StoreProvider>
+      </BrowserRouter>
+    </React.StrictMode>
+  )
+}
+
+root.render(<FullApp />)

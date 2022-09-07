@@ -1,0 +1,234 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders create form 1`] = `
+Array [
+  <div
+    className="sc-bczRLJ kigNbx"
+  >
+    <div
+      className="sc-gsnTZi dkDfzv"
+    >
+      <p
+        className="sc-hKMtZM cpxqda"
+      >
+        Create Expense
+      </p>
+    </div>
+  </div>,
+  <div
+    className="sc-gsnTZi dkDfzv"
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "gap": "25px",
+      }
+    }
+  >
+    <form
+      className="sc-ksZaOG"
+      data-testid="test-form"
+      onSubmit={[Function]}
+    >
+      <div
+        className="sc-hAZoDl hCUrIr"
+      >
+        <input
+          className="sc-eCYdqJ cslQzD"
+          data-testid="description"
+          onChange={[Function]}
+          placeholder="Description"
+          required={true}
+          type="text"
+          value=""
+        />
+        <input
+          className="sc-eCYdqJ cslQzD"
+          data-testid="amount"
+          onChange={[Function]}
+          pattern="[0-9.]+"
+          placeholder="Amount"
+          required={true}
+          type="text"
+          value=""
+        />
+        <div
+          className="SingleDatePicker SingleDatePicker_1"
+        >
+          <div>
+            <div
+              className="SingleDatePickerInput SingleDatePickerInput_1 SingleDatePickerInput__withBorder SingleDatePickerInput__withBorder_2"
+            >
+              <div
+                className="DateInput DateInput_1"
+              >
+                <input
+                  aria-describedby="DateInput__screen-reader-message-date"
+                  aria-label="Date"
+                  autoComplete="off"
+                  className="DateInput_input DateInput_input_1"
+                  disabled={false}
+                  id="date"
+                  name="date"
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Date"
+                  readOnly={false}
+                  required={false}
+                  type="text"
+                  value="01-01-2022"
+                />
+                <p
+                  className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
+                  id="DateInput__screen-reader-message-date"
+                >
+                  Navigate forward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <textarea
+          className="sc-fnykZs iZABqP"
+          data-testid="note"
+          name="note"
+          onChange={[Function]}
+          placeholder="Add note"
+          value=""
+        />
+      </div>
+      <button
+        className="sc-dkzDqf eUEFT"
+        mode={0}
+        type="submit"
+      >
+        Save Expense
+      </button>
+    </form>
+  </div>,
+]
+`;
+
+exports[`renders edit form 1`] = `
+Array [
+  <div
+    className="sc-bczRLJ kigNbx"
+  >
+    <div
+      className="sc-gsnTZi dkDfzv"
+    >
+      <p
+        className="sc-hKMtZM cpxqda"
+      >
+        Edit Expense
+      </p>
+    </div>
+  </div>,
+  <div
+    className="sc-gsnTZi dkDfzv"
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "gap": "25px",
+      }
+    }
+  >
+    <form
+      className="sc-ksZaOG"
+      data-testid="test-form"
+      onSubmit={[Function]}
+    >
+      <div
+        className="sc-hAZoDl hCUrIr"
+      >
+        <input
+          className="sc-eCYdqJ cslQzD"
+          data-testid="description"
+          onChange={[Function]}
+          placeholder="Description"
+          required={true}
+          type="text"
+          value=""
+        />
+        <input
+          className="sc-eCYdqJ cslQzD"
+          data-testid="amount"
+          onChange={[Function]}
+          pattern="[0-9.]+"
+          placeholder="Amount"
+          required={true}
+          type="text"
+          value=""
+        />
+        <div
+          className="SingleDatePicker SingleDatePicker_1"
+        >
+          <div>
+            <div
+              className="SingleDatePickerInput SingleDatePickerInput_1 SingleDatePickerInput__withBorder SingleDatePickerInput__withBorder_2"
+            >
+              <div
+                className="DateInput DateInput_1"
+              >
+                <input
+                  aria-describedby="DateInput__screen-reader-message-date"
+                  aria-label="Date"
+                  autoComplete="off"
+                  className="DateInput_input DateInput_input_1"
+                  disabled={false}
+                  id="date"
+                  name="date"
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Date"
+                  readOnly={false}
+                  required={false}
+                  type="text"
+                  value="01-01-2022"
+                />
+                <p
+                  className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
+                  id="DateInput__screen-reader-message-date"
+                >
+                  Navigate forward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <textarea
+          className="sc-fnykZs iZABqP"
+          data-testid="note"
+          name="note"
+          onChange={[Function]}
+          placeholder="Add note"
+          value=""
+        />
+      </div>
+      <button
+        className="sc-dkzDqf eUEFT"
+        mode={0}
+        type="submit"
+      >
+        Save Expense
+      </button>
+      <button
+        className="sc-dkzDqf kpebWh"
+        data-testid="removeExpense"
+        mode={1}
+        onClick={[Function]}
+        style={
+          Object {
+            "marginTop": "15px",
+          }
+        }
+      >
+        Remove Expense
+      </button>
+    </form>
+  </div>,
+]
+`;

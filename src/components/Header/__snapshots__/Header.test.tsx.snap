@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<header
+  className="sc-hKMtZM dHCQzB"
+>
+  <div
+    className="sc-gsnTZi dkDfzv"
+  >
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      <h1
+        className="sc-dkzDqf gHkNem"
+        style={
+          Object {
+            "margin": "0px",
+            "paddingBottom": "25px",
+            "paddingTop": "25px",
+          }
+        }
+      >
+        Budget App
+      </h1>
+    </a>
+  </div>
+</header>
+`;
